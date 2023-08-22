@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products - HarmanStore </title>
+    <link rel="stylesheet" href="css page/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+   <div class="navbar">
+    <div class="logo">
+        <img src="images/logo2.png" width="125px">
+    </div>
+    <nav>
+        <ul id="menuitems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="pdetails.html">Details</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+ <a href="cart.html"><div class="img"> <img src="images/cart2.png" width="30px"></div> </a>
+  <div> <img src="images/micon.png" class="menuicon" onclick="menutoggle()" ></div> 
+</div> 
+</div>
+<!-- cart items  -->
+<div class="small-container cartpage">
+    <table>
+        <tr>
+            <th>PRODUCT</th>
+            <th>QUANTITY</th>
+            <th>SUBTOTAL</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/white.jpg">
+                <div class="p-detail">
+                    <p>White Pleated Shirt</p>
+                    <small>Price:50.00$</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/shoe2.jpg">
+                <div class="p-detail">
+                    <p>Kids Lighting Shoes</p>
+                    <small>Price:80.00$</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$80.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/watch4.jpg">
+                <div class="p-detail">
+                    <p>Digital Watch</p>
+                    <small>Price:100.00$</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$100.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/dd4.jpg">
+                <div class="p-detail">
+                    <p>Kids Casual Shorts</p>
+                    <small>Price:60.00$</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$60.00</td>
+        </tr>
+    </table>
+    <div class="total">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$300.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$30.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$330.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and ios mobile phone.</p>
+                    <div class="applogo">
+                        <img src="images/play.png">
+                        <img src="images/store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logologo.png">
+                    <p>Our Purpose Is To Provide Best Quality And Benefits Of 
+                        Brands TO Many To Share Best Bond With Our Customers.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                   </ul>
+                   </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+          <p class="cr">Copyright 2023 - Best Brands</p>
+        </div>
+    </div>
+    <!-- js for toggle menu -->
+    <script>
+        var mitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight ="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px"
+            }
+            else
+            {
+               menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+   
+</body>
+</html>

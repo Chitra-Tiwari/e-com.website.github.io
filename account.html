@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products - HarmanStore </title>
+    <link rel="stylesheet" href="css page/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+   <div class="navbar">
+    <div class="logo">
+        <img src="images/logo2.png" width="125px">
+    </div>
+    <nav>
+        <ul id="menuitems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="pdetails.html">Details</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+    <a href="cart.html">  <div class="img"> <img src="images/cart2.png" width="30px"></div> </a>
+  <div> <img src="images/micon.png" class="menuicon" onclick="menutoggle()" ></div> 
+
+   </div> 
+  
+</div>
+<!-- account page  -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/danny.jpeg">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="log()">Login</span>
+                        <span onclick="reg()">Register</span>
+                        <hr id="hline">
+                    </div>
+                    <form id="loginform">
+                        <input type="text" placeholder="username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <br>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    <form id="regform">
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and ios mobile phone.</p>
+                    <div class="applogo">
+                        <img src="images/play.png">
+                        <img src="images/store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logologo.png">
+                    <p>Our Purpose Is To Provide Best Quality And Benefits Of 
+                        Brands TO Many To Share Best Bond With Our Customers.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                   </ul>
+                   </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+          <p class="cr">Copyright 2023 - Best Brands</p>
+        </div>
+    </div>
+    <!-- js for toggle menu -->
+    <script>
+        var mitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight ="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px"
+            }
+            else
+            {
+               menuitems.style.maxHeight = "0px"
+            }
+        }
+        <!-- js for toggle form  -->
+        var loginform=document.getElementById("loginform");
+        var regform=document.getElementById("regform");
+        var hline=document.getElementById("hline");
+        function reg(){
+            regform.style.transform="translatex(0px)";
+            loginform.style.transform="translatex(0px)";
+            hline.style.transform="translatex(80px)";
+        }
+
+        function log(){
+            regform.style.transform="translatex(300px)";
+            loginform.style.transform="translatex(300px)";
+            hline.style.transform="translatex(0px)"
+        }
+    </script>
+</body>
+</html>
